@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	display: grid;
+	width: 100%;
+	height: 100%;	
+}
+
+main.login-bg {
+	background: #444 url(/resources/img/main-bg.png) no-repeat center center/cover;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 2fr;
+	gap: 1rem;
+}
+
+main.home-page {
+	position: relative;
+	z-index: 5;
+}
+
+main.home-page::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #444 url(/resources/img/main-bg.png) no-repeat center center/cover;
+	opacity: .7;
+}
+
+.title {
+	font-family: Roboto, sans-serif;
+	font-size: 90px;
+	font-weight: 100;
+	color: transparent;
+	background: #687EAF;
+	-webkit-background-clip: text;
+	text-shadow: 0px 3px 3px rgba(255,255,255,0.4);
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	position: relative;
+	top: 35%;
+}
+
+.small {
+	font-size: 24px;
+}
+
+.sing-up-title{
+	font-size: 25px;
+	margin-left: 25%;
+	margin-top: 50%;
+	font-weight: 100;
+}
+
+.info-blocks {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-column: 1;
+	grid-row: 2;
+	grid-template-columns: 33% 33% 33%;
+	grid-gap: 50px;
+}
+span.a {
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+	background-color: saddlebrown;
+}
+span.b {
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+	background-color: deepskyblue;
+}
+span.c {
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+	background-color: darkgreen;
+}
+.form {
+	font-family: Roboto, sans-serif;
+	background: rgba(166, 200, 233,0.5);
+	width: 85%;
+	height: 100%;
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	color: white;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	background-color: rgba(149, 173, 177, 0.3);
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .1rem 1rem;
+}
+
+.flying-window {
+	z-index: 5;
+	position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    background: rgba(142, 150, 151, .5);
+    display: none;
+}
+
+.flying-window-form {
+	display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(207, 217, 218, .5);
+}
+
+
+.inp {
+	position: relative;
+	width: 100%;
+	left: 10%;
+	right: 10%;
+}
+.inp .label {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	transform-origin: 0 0;
+	transition: all 0.2s ease;
+}
+.inp .border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	background: #07f;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: all 0.15s ease;
+}
+.inp input {
+	-webkit-appearance: none;
+	border: 0;
+	font-family: inherit;
+	width: 80%;
+	margin-top: 10px;
+	height: 24px;
+	font-size: 16px;
+	font-weight: 500;
+	border-bottom: 2px solid lightskyblue;
+	background: none;
+	border-radius: 0;
+	color: aliceblue;
+	transition: all 0.15s ease;
+}
+.inp input:hover {
+	background: rgba(34,50,84,0.13);
+}
+.inp input:not(:placeholder-shown) + span {
+	color: #07f;
+	transform: translateY(-15px) scale(0.75);
+}
+.inp input:focus {
+	background: none;
+	outline: none;
+}
+.inp input:focus + span {
+	color: #07f;
+	transform: translateY(-15px) scale(0.75);
+}
+.inp input:focus + span + .border {
+	transform: scaleX(1);
+}
+.inp input::placeholder{
+	color: transparent;
+}
+
+.position{
+	margin-top: 10px;
+	margin-left: 10%;
+	float: left;
+}
+
+.policy {
+	margin-top: 8px;
+	margin-left: 12%;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button2 {
+	background-color: transparent;
+	color: whitesmoke;
+	border: 2px solid #008CBA;
+	border-radius: 20px;
+	padding: 10px 24px;
+	margin-left: 35%;
+}
+
+.button2:hover {
+	background-color: #008CBA;
+	color: white;
+}
+
+.sign-in{
+	text-align: center;
+}
+
+.sign-link{
+	color: whitesmoke;
+}

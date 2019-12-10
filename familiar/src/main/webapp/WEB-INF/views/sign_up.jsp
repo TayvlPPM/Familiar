@@ -12,7 +12,7 @@
 		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="<spring:url value='/resources/css/style.css'/>" rel="stylesheet">
 	</head>
 	<body>
@@ -22,9 +22,16 @@
 				<p class = "small" >organizer</p>
 			</div>
 			<div class="info-blocks">
-				<span class="a">BLOCK 1</span>
-				<span class="b">BLOCK 2</span>
-				<span class="c">BLOCK 3</span>
+				<div class="block-a">
+					<i class="large material-icons" style="font-size: 60px;  float:left" >insert_invitation</i>Create <b>tasks</b><br>
+					
+				</div>
+				<div class="block-b">
+					<i class="large material-icons" style="font-size: 60px;  float:left" >share</i>Share with your <b>family</b>
+				</div>
+				<div class="block-c">
+					<i class="large material-icons" style="font-size: 60px;  float:left" >done_all</i>Make tasks <b>together</b><br>
+				</div>
 			</div>
 			<div class="form">
 				<h3 class="sing-up-title">CREATE YOUR ACCOUNT</h3>

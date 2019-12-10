@@ -71,31 +71,55 @@ main.home-page::before {
 	display: grid;
 	width: 100%;
 	height: 100%;
+	margin-left: 10%;
 	grid-column: 1;
 	grid-row: 2;
-	grid-template-columns: 33% 33% 33%;
-	grid-gap: 50px;
+	grid-template-columns: 25% 25% 25%;
+	grid-gap: 40px;
 }
-span.a {
+.block-a {
 	display: inline-block;
-	width: 100%;
-	height: 100px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	color: whitesmoke;
+	height: 65px;
 	padding: 5px;
-	background-color: saddlebrown;
+	background-color: chocolate;
+	opacity: 0.65;
 }
-span.b {
+.block-b {
 	display: inline-block;
-	width: 100%;
-	height: 100px;
-	padding: 5px;
-	background-color: deepskyblue;
-}
-span.c {
-	display: inline-block;
-	width: 100%;
-	height: 100px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+	color: whitesmoke;
+	height: 70px;
 	padding: 5px;
 	background-color: darkgreen;
+	opacity: 0.65;
+}
+.block-c {
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+	color: whitesmoke;
+	height: 70px;
+	padding: 5px;
+	background-color: deepskyblue;
+	opacity: 0.65;
+}
+.in-block-text{
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	color: whitesmoke;
+	overflow-wrap: break-word;
+	line-height: 0px;
 }
 .form {
 	font-family: Roboto, sans-serif;
@@ -201,6 +225,7 @@ header {
 }
 .inp input::placeholder{
 	color: transparent;
+	display: none;
 }
 
 .position{

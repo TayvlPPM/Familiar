@@ -21,18 +21,14 @@
 				<p>FAMILIAR</p>
 				<p class = "small" >organizer</p>
 			</div>
-			<div class="info-blocks">
-				<div class="block-a">
-					<i class="large material-icons" style="font-size: 60px;  float:left" >insert_invitation</i>Create <b>tasks</b><br>
-					
-				</div>
-				<div class="block-b">
-					<i class="large material-icons" style="font-size: 60px;  float:left" >share</i>Share with your <b>family</b>
-				</div>
-				<div class="block-c">
-					<i class="large material-icons" style="font-size: 60px;  float:left" >done_all</i>Make tasks <b>together</b><br>
-				</div>
-			</div>
+			<table>
+				<tr><th class="block-a"><i class="large material-icons" style="font-size: 50px;float: left">event</i> Create <b>tasks</b></th><th style="width: 20px"></th>
+					<th class="block-b"><i class="large material-icons" style="font-size: 50px;float: left">share</i>Share with your <b>family</b></th><th style="width: 20px"></th>
+					<th class="block-c"><i class="large material-icons" style="font-size: 50px;float: left">done_all</i> Make tasks <b>together</b></th></tr>
+				<tr><td class="in-block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td style="width: 20px"></td>
+					<td class="in-block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td style="width: 20px"></td>
+					<td class="in-block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr>
+			</table>
 			<div class="form">
 				<h3 class="sing-up-title">CREATE YOUR ACCOUNT</h3>
 				<form:form action="sign_up" method="post" modelAttribute="userForm" acceptCharset="UTF-8">

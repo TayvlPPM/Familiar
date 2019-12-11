@@ -59,6 +59,10 @@ main.home-page::before {
 .small {
 	font-size: 24px;
 }
+table {
+	width: 90%;
+	margin-left: 10%;
+}
 
 .sing-up-title{
 	font-size: 25px;
@@ -67,22 +71,14 @@ main.home-page::before {
 	font-weight: 100;
 }
 
-.info-blocks {
-	display: grid;
-	width: 100%;
-	height: 100%;
-	margin-left: 10%;
-	grid-column: 1;
-	grid-row: 2;
-	grid-template-columns: 25% 25% 25%;
-	grid-gap: 40px;
-}
 .block-a {
 	display: inline-block;
 	font-family: Roboto, sans-serif;
 	font-size: 22px;
+	font-weight: 100;
 	text-align: center;
 	vertical-align: middle;
+	width: 250px;
 	line-height: 60px;
 	color: whitesmoke;
 	height: 65px;
@@ -94,10 +90,13 @@ main.home-page::before {
 	display: inline-block;
 	font-family: Roboto, sans-serif;
 	font-size: 22px;
+	font-weight: 100;
 	text-align: center;
 	vertical-align: middle;
+	width: 250px;
+	line-height: 27px;
 	color: whitesmoke;
-	height: 70px;
+	height: 65px;
 	padding: 5px;
 	background-color: darkgreen;
 	opacity: 0.65;
@@ -106,20 +105,26 @@ main.home-page::before {
 	display: inline-block;
 	font-family: Roboto, sans-serif;
 	font-size: 22px;
+	font-weight: 100;
 	text-align: center;
 	vertical-align: middle;
+	width: 250px;
+	line-height: 27px;
 	color: whitesmoke;
-	height: 70px;
+	height: 65px;
 	padding: 5px;
 	background-color: deepskyblue;
 	opacity: 0.65;
 }
 .in-block-text{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.1);
 	font-family: Roboto, sans-serif;
 	font-size: 16px;
+	padding: 5px;
 	color: whitesmoke;
 	overflow-wrap: break-word;
-	line-height: 0px;
+	width: 250px;
 }
 .form {
 	font-family: Roboto, sans-serif;

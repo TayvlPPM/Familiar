@@ -108,8 +108,9 @@
 					<button id="orange" class="some-color" style="background-color: orange" onclick="getColor(this.id)"> </button>
 					<button id="green" class="some-color" style="background-color: green" onclick="getColor(this.id)"> </button>
 					<button id="violet" class="some-color" style="background-color: violet" onclick="getColor(this.id)"> </button>
-
-					<input class="some-color" type="color"  id="colorWell">
+					<br>
+					<label for="colorWell">Color:</label>
+					<input type="color" value="#ff0000" id="colorWell">
 				</div>
 			</div>
 			<br style="line-height: 10px">

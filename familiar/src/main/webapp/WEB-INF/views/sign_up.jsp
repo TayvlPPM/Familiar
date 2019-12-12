@@ -97,7 +97,7 @@
 					</spring:bind>
 					</div>
 					<p class="policy">I accept the Terms of Use & Privacy Policy</p><br>
-					<button class="button2" type="submit">Register</button>
+					<button class="round-blue-button" type="submit">Register</button>
 					<p class="sign-in">Already have an account? <a class="sign-link" href="/sign_in">Sign in</a></p>
 				</form:form>
 			</div>

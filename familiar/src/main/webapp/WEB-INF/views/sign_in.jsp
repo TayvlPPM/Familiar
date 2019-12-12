@@ -51,7 +51,7 @@
 		                   value="${_csrf.token}"/>
 		        </div>
 
-		        <button class="button2" type="submit">Sign In</button>
+		        <button class="round-blue-button" type="submit">Sign In</button>
 		        <a class="sign-link" href="/sign_up">Sign Up</a>
 			</form>
 		</div>

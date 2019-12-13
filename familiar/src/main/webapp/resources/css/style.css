@@ -542,12 +542,25 @@ header {
 .color-palette{
 	position: relative;
 	top: 20px;
+	text-align: center;
 }
 .some-color{
 	color: transparent;
 	width: 20px;
 	height: 20px;
 	border-radius: 20px;
+	border: transparent;
+	outline: none;
+}
+
+.palette{
+	font-family: inherit;
+	font-size: 17px;
+	font-weight: 500;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
 	border: 1px solid black;
 	outline: none;
+	 vertical-align: top;
 }

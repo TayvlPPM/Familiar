@@ -86,7 +86,7 @@
 
 	<!-- Group Window Start -->
 	<div id="create-group-window" class="flying-window">
-		<div class="flying-window-form" style="width: 20%">
+		<div class="flying-window-form">
 			<div class="flying-window-title">
 				<p>Create a new group</p>
 				<button id="close-group-window" class="close-button"><i class="material-icons">cancel</i></button>
@@ -102,19 +102,36 @@
 			<div class="group-color-block">
 				<p class="group-color-block-title">Choose a color</p>
 				<div class="color-palette">
-					<button id="red" class="some-color" style="background-color: red" onclick="getColor(this.id)"> </button>
-					<button id="yellow" class="some-color" style="background-color: yellow" onclick="getColor(this.id)"> </button>
-					<button id="blue" class="some-color" style="background-color: blue" onclick="getColor(this.id)"> </button>
-					<button id="orange" class="some-color" style="background-color: orange" onclick="getColor(this.id)"> </button>
-					<button id="green" class="some-color" style="background-color: green" onclick="getColor(this.id)"> </button>
-					<button id="violet" class="some-color" style="background-color: violet" onclick="getColor(this.id)"> </button>
-					<br>
-					<label for="colorWell">Color:</label>
-					<input type="color" value="#ff0000" id="colorWell">
+					<button id="1" class="some-color" style="background-color: #70104f" onclick="getColor(this.id)"> </button>
+					<button id="2" class="some-color" style="background-color: #9a2b4c" onclick="getColor(this.id)"> </button>
+					<button id="3" class="some-color" style="background-color: #bcdfe5" onclick="getColor(this.id)"> </button>
+					<button id="4" class="some-color" style="background-color: #49bed9" onclick="getColor(this.id)"> </button>
+					<button id="5" class="some-color" style="background-color: #842e79" onclick="getColor(this.id)"> </button>
+					<button id="6" class="some-color" style="background-color: #672741" onclick="getColor(this.id)"> </button>
+					<button id="7" class="some-color" style="background-color: #85cdcc" onclick="getColor(this.id)"> </button>
+					<button id="8" class="some-color" style="background-color: #15819d" onclick="getColor(this.id)"> </button>
+					<button id="9" class="some-color" style="background-color: #d5208d" onclick="getColor(this.id)"> </button>
+					<button id="10" class="some-color" style="background-color: #eb5561" onclick="getColor(this.id)"> </button>
+					<button id="11" class="some-color" style="background-color: #235240" onclick="getColor(this.id)"> </button>
+					<button id="12" class="some-color" style="background-color: #b0d7ed" onclick="getColor(this.id)"> </button>
+					<button id="13" class="some-color" style="background-color: #f9c3d0" onclick="getColor(this.id)"> </button>
+					<button id="14" class="some-color" style="background-color: #f18787" onclick="getColor(this.id)"> </button>
+					<button id="15" class="some-color" style="background-color: #619565" onclick="getColor(this.id)"> </button>
+					<button id="16" class="some-color" style="background-color: #94b1d9" onclick="getColor(this.id)"> </button>
+					<button id="17" class="some-color" style="background-color: #e9b0b0" onclick="getColor(this.id)"> </button>
+					<button id="18" class="some-color" style="background-color: #fabfa7" onclick="getColor(this.id)"> </button>
+					<button id="19" class="some-color" style="background-color: #99b59f" onclick="getColor(this.id)"> </button>
+					<button id="20" class="some-color" style="background-color: #094c9b" onclick="getColor(this.id)"> </button>
+					<button id="21" class="some-color" style="background-color: #f8e0d4" onclick="getColor(this.id)"> </button>
+					<button id="22" class="some-color" style="background-color: #ffeda5" onclick="getColor(this.id)"> </button>
+					<button id="23" class="some-color" style="background-color: #c7e6db" onclick="getColor(this.id)"> </button>
+					<button id="24" class="some-color" style="background-color: #123764" onclick="getColor(this.id)"> </button>
+					<button class="palette" onclick="document.getElementById('colorWell').click()" >+</button>
 				</div>
 			</div>
 			<br style="line-height: 10px">
 			<button class="flying-window-done-btn">Done</button>
+			<input style="visibility: hidden" type="color" placeholder="" id="colorWell" >
 		</div>
 	</div>
 	<!-- Group Window End -->
